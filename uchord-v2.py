@@ -26,13 +26,13 @@
 # https://github.com/gkvoelkl/python-ukulele-chord-to-svg
 #
 # Modified by Lars314 to their personal preferences. List of changes:
-#   - Added debug parameter to turn on print statements for debugging purposes
+#   - Adjusted position of closed string markers to center them between frets
 #   - Expanded diagram to include 5 frets instead of 4
 #   - Added grey fretmarker circles on 5th, 7th, 10th, 12th, and 15th frets
 #   - Added black box to mark the nut, as long as the starting fret is 1
-#   - Lowered closed string markers 1px to center them between frets
-#   - Shifted the fretboard 2px right to fix starting fret labels >=10
-#   - Raised the chord name 2px so that letters like "j" don't overlap with
+#   - Added debug parameter to turn on print statements for debugging purposes
+#   - Slightly shifted the fretboard 2px right to fix starting fret labels >=10
+#   - Slightly raised the chord name so that letters like "j" don't overlap with
 #     open string circles
 # ------------------------------------------------------------------------------
 
@@ -170,7 +170,7 @@ class Chord:
 
 
         svg = """
-      <text id="chordName" x="44" y="9" text-anchor="middle" style="font-size: 16px;">{name}</text>
+      <text id="chordName" x="42" y="9" text-anchor="middle" style="font-size: 16px;">{name}</text>
       <text id="startingFret" x="0" y="40" style="font-size: 9px; visibility: {starting_fret_visible};">{starting_fret}</text>
       <g id="nut" transform="translate(11, 26)">
         <rect height="10" width="62" x="2" fill="black" style="visibility: {nut_visible};"></rect>
