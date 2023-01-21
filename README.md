@@ -23,9 +23,5 @@ uchord.write_chord('c.svg','C','0003')
 
 <img src="pic/c.svg" align="left"><br><br><br><br><br>
 
-If you like it, use it. If you have some suggestions, tell me (gkvoelkl@nelson-games.de).
 
-# Thanks
 
-Special thanks to the project https://github.com/gkvoelkl/python-ukulele-chord-to-svg where I learned much about 
-SVG and chord diagrams. I recycled all of the svg commands.
